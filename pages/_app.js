@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
 				<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"></link>
 				<meta property="og:title" content="Pokedex">
 				<meta property="og:description" content="Gotta Catch 'Em All">
-				<meta property="og:image" content="/imgs/pokedex.png">
+				<meta property="og:image" content="/imgs/pokedex-compressor.png">
 			</Head>
 			<Component {...pageProps} />
 		</Layout>
