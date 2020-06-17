@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import EvolutionChain from '../components/evolutionChain';
 import BtnNext from '../components/btnNext';
-import BtnBack from '../components/BtnBack';
+import BtnBack from '../components/btnBack';
 
 import {getAllPokemonsName, getPokemonData} from '../data/pokemons';
 import { useState, useEffect } from 'react';
