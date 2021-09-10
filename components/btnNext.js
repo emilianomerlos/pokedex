@@ -32,7 +32,7 @@ const btnNext = ({ id }) => {
 		)
 	}
 
-	const urlImg ="https://pokeres.bastionbot.org/images/pokemon/"+ String(id + 1) +".png";
+	const urlImg ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+ String(id + 1) +".png";
 	return(
 		<Link href="/[name]" as={"/" + pokemon.name}>
 			<button className="btn">

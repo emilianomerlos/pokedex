@@ -9,7 +9,7 @@ const Searcher = () => {
     const [pokemonsShow, setPokemonsShow] = useState([]);
 
 	const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
-    const urlImg = "https://pokeres.bastionbot.org/images/pokemon/";
+    const urlImg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 
 	useEffect(
 		() => {
@@ -39,7 +39,8 @@ const Searcher = () => {
             setPokemonsShow([]);
         } else {
             const newPokespokemons = pokemons.filter( (p) => {
-                return p.name.indexOf(filtro) > -1;
+                const pokemonFullName = `${('000' + String(p.id + 1) ).slice(-3)} - ${p.name}`;
+                return pokemonFullName.indexOf(filtro) > -1;
             } );
             
             if ( newPokespokemons.length === 0 ) {
@@ -76,7 +77,7 @@ const Searcher = () => {
                         return(
                             <Link href="/[name]" as={"/" + poke.name} key={i}  >
                                 <article className="searcher-result" > 
-                                    <img src={poke.urlImg} /><p> {poke.name} </p>
+                                    <img src={poke.urlImg} /><p> { ('000' + String(poke.id + 1) ).slice(-3) } - {poke.name} </p>
                                 </article>
                             </Link>
                         )

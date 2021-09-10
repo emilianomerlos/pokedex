@@ -8,7 +8,7 @@ const Poke = ({ id }) => {
 	const [pokemon, setPokemon] = useState({});
 	
 	const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
-	const apiImg = "https://pokeres.bastionbot.org/images/pokemon/";
+	const apiImg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 
 	useEffect(
 		() => {

@@ -9,7 +9,7 @@ import BtnBack from '../components/btnBack';
 import {getAllPokemonsName, getPokemonData} from '../data/pokemons';
 import { useState, useEffect } from 'react';
 
-const apiImg = "https://pokeres.bastionbot.org/images/pokemon/";
+const apiImg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 
 export default function Pokemon({pokemon}) {
 

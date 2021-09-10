@@ -7,7 +7,7 @@ const evolutionChain = ({ url }) => {
 	const [loading, setLoading] = useState(true);
 	const [pokemons, setPokemons] = useState([]);
 
-	const apiImg = "https://pokeres.bastionbot.org/images/pokemon/";
+	const apiImg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 
 	let addPoke = ( chain ) => {
 
