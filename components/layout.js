@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
 
 	const [open, setOpen] = useState(false);
 
@@ -52,3 +52,4 @@ export default ({ children }) => {
 		</div>
 	);	
 }
+export default Layout;
